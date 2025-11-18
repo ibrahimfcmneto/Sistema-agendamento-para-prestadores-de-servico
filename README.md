@@ -1,7 +1,7 @@
 # Sistema-agendamento-paraprestadores-de-serviço
 # 📅 MicroERP de Agendamento Inteligente (Agendamento-SI)
 
-### Status do Projeto: 🚧 Em Desenvolvimento (MVP - Mínimo Produto Viável)
+### Status do Projeto: Em Desenvolvimento (MVP - Mínimo Produto Viável)
 
 **Desenvolvido como projeto prático e de portfólio no curso de Sistemas de Informação (PUC-Campinas).**
 

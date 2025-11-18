@@ -1,0 +1,12 @@
+# Core Framework e ORM
+Flask
+Flask-SQLAlchemy
+psycopg2-binary
+
+# Segurança e Autenticação
+python-dotenv
+Flask-Login
+Flask-Bcrypt
+
+# Servidor de Produção (para o deploy no Render/Railway)
+gunicorn

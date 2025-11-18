@@ -11,3 +11,5 @@ def make_shell_context():
 if __name__ == '__main__':
     # Quando você rodar python run.py, ele vai iniciar o servidor web
     app.run(debug=True)
+
+#deu certo a develop

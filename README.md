@@ -1,15 +1,13 @@
 # Sistema-agendamento-paraprestadores-de-serviço
-# 📅 MicroERP de Agendamento Inteligente (Agendamento-SI)
+# 📅 MicroERP de Agendamento Inteligente
 
 ### Status do Projeto: Em Desenvolvimento (MVP - Mínimo Produto Viável)
-
-**Desenvolvido como projeto prático e de portfólio no curso de Sistemas de Informação (PUC-Campinas).**
 
 ---
 
 ## Sobre o Projeto
 
-O **Agendamento-SI** é um sistema de gestão de agendamentos e presença (*Micro-ERP*) focado em otimizar as operações de **pequenos prestadores de serviço** (ex: barbearias, salões, clínicas independentes).
+O **Sistema-agendamento-paraprestadores-de-serviço** é um sistema de gestão de agendamentos e presença (*Micro-ERP*) focado em otimizar as operações de **pequenos prestadores de serviço** (ex: barbearias, salões, clínicas independentes).
 
 O principal objetivo de negócio é **reduzir a taxa de *no-show*** (clientes faltosos) e fornecer ao gestor **dados acionáveis** para melhorar a eficiência operacional.
 

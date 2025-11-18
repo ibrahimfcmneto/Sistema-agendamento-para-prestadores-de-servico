@@ -7,13 +7,13 @@
 
 ---
 
-## 💡 Sobre o Projeto
+## Sobre o Projeto
 
 O **Agendamento-SI** é um sistema de gestão de agendamentos e presença (*Micro-ERP*) focado em otimizar as operações de **pequenos prestadores de serviço** (ex: barbearias, salões, clínicas independentes).
 
 O principal objetivo de negócio é **reduzir a taxa de *no-show*** (clientes faltosos) e fornecer ao gestor **dados acionáveis** para melhorar a eficiência operacional.
 
-### 🎯 Valor de Negócio (Foco em SI)
+### Valor de Negócio (Foco em SI)
 
 * **Redução de Perdas:** Fornece um mecanismo para registrar e analisar as faltas, ajudando o gestor a tomar decisões sobre a política de cancelamento.
 * **Decisão Baseada em Dados (BI):** Apresenta um Dashboard de KPI's (Taxa de No-Show, Serviços Mais Vendidos) essencial para a gestão.
@@ -21,7 +21,7 @@ O principal objetivo de negócio é **reduzir a taxa de *no-show*** (clientes fa
 
 ---
 
-## ✨ Funcionalidades do MVP
+## Funcionalidades do MVP
 
 O MVP está focado nas seguintes funcionalidades essenciais para a área administrativa:
 
@@ -33,7 +33,7 @@ O MVP está focado nas seguintes funcionalidades essenciais para a área adminis
 
 ---
 
-## 🛠️ Stack Tecnológica
+## Stack Tecnológica
 
 Esta *stack* foi escolhida para demonstrar proficiência em tecnologias modernas e amplamente utilizadas no mercado de São Paulo.
 
@@ -47,7 +47,7 @@ Esta *stack* foi escolhida para demonstrar proficiência em tecnologias modernas
 
 ---
 
-## ⚙️ Configuração do Ambiente de Desenvolvimento
+## Configuração do Ambiente de Desenvolvimento
 
 Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
@@ -88,7 +88,7 @@ Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
 ---
 
-## 🤝 Contribuições e Licença
+## Contribuições e Licença
 
 Este é um projeto de portfólio pessoal e está licenciado sob a **Licença MIT**.
 

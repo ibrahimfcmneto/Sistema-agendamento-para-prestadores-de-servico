@@ -66,66 +66,25 @@ def logout():
 @app.route("/services")
 @login_required
 def services():
-    # Busca todos os serviços cadastrados no banco de dados
     all_services = Service.query.order_by(Service.name).all()
-    return render_template('services.html', title='Serviços', services=all_services)
+    # MUDANÇA AQUI: Renderiza o arquivo dentro da pasta 'servicos/'
+    return render_template('servicos/lista.html', title='Serviços', services=all_services) 
 
 # 2. Rota de Criação de Serviço (Create)
 @app.route("/service/new", methods=['GET', 'POST'])
 @login_required
 def new_service():
     form = ServiceForm()
-    if form.validate_on_submit():
-        # Cria um novo objeto Service com os dados do formulário
-        service = Service(
-            name=form.name.data,
-            price=form.price.data,
-            duration_minutes=form.duration_minutes.data
-        )
-        db.session.add(service)
-        db.session.commit()
-        flash(f'Serviço "{service.name}" criado com sucesso!', 'success')
-        return redirect(url_for('services'))
+    # ... lógica de validação ...
     
-    return render_template('create_service.html', title='Novo Serviço', form=form, legend='Criar Novo Serviço')
+    # MUDANÇA AQUI: Renderiza o arquivo dentro da pasta 'servicos/'
+    return render_template('servicos/form.html', title='Novo Serviço', form=form, legend='Criar Novo Serviço')
 
 # 3. Rota de Edição de Serviço (Update)
 @app.route("/service/<int:service_id>/edit", methods=['GET', 'POST'])
 @login_required
 def edit_service(service_id):
-    # Tenta buscar o serviço pelo ID, ou retorna erro 404 se não existir
-    service = Service.query.get_or_404(service_id)
-    form = ServiceForm()
-
-    if form.validate_on_submit():
-        # Atualiza os dados do objeto existente
-        service.name = form.name.data
-        service.price = form.price.data
-        service.duration_minutes = form.duration_minutes.data
-        # Não precisa de db.session.add(), apenas commit
-        db.session.commit()
-        flash(f'Serviço "{service.name}" atualizado com sucesso!', 'success')
-        return redirect(url_for('services'))
-
-    elif request.method == 'GET':
-        # Preenche o formulário com os dados atuais do serviço
-        form.name.data = service.name
-        form.price.data = service.price
-        form.duration_minutes.data = service.duration_minutes
-        
-    return render_template('create_service.html', title='Editar Serviço', form=form, legend=f'Editar Serviço: {service.name}')
-
-# 4. Rota de Exclusão de Serviço (Delete)
-@app.route("/service/<int:service_id>/delete", methods=['POST'])
-@login_required
-def delete_service(service_id):
-    service = Service.query.get_or_404(service_id)
+    # ... lógica de edição ...
     
-    # IMPORTANTE: Antes de excluir, você deve verificar se existem agendamentos
-    # associados a este serviço. Se houver, a exclusão falhará ou causará problemas
-    # devido à Chave Estrangeira. Para o MVP, faremos a exclusão direta.
-    
-    db.session.delete(service)
-    db.session.commit()
-    flash(f'Serviço excluído com sucesso!', 'success')
-    return redirect(url_for('services'))
+    # MUDANÇA AQUI: Renderiza o arquivo dentro da pasta 'servicos/'
+    return render_template('servicos/form.html', title='Editar Serviço', form=form, legend=f'Editar Serviço: {service.name}')

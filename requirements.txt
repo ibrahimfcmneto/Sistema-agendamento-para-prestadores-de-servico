@@ -1,12 +1,12 @@
-# Core Framework e ORM
+# Core Framework 
 Flask
-Flask-SQLAlchemy
-psycopg2-binary
+pymysql # Novo driver
 
 # Segurança e Autenticação
 python-dotenv
-Flask-Login
+Flask-Login # Mantemos para a estrutura de rotas
 Flask-Bcrypt
+Flask-WTF
 
-# Servidor de Produção (para o deploy no Render/Railway)
+# Servidor de Produção (para o deploy)
 gunicorn
